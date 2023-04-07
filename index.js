@@ -111,7 +111,7 @@ app.get("/newArrivals", function (req, res) {
 });
 
 app.get("/ourBestsellers", function (req, res) {
-  let newArrivals = {
+  let ourBestsellers = {
     titel: "Our Bestsellers",
     myproduct: [
       {
@@ -148,7 +148,7 @@ app.get("/ourBestsellers", function (req, res) {
       },
     ],
   };
-  res.json(newArrivals);
+  res.json(ourBestsellers);
 });
 //   ===============NewArrivals part end=======
 
