@@ -74,10 +74,32 @@ app.get("/advertisment", function (req, res) {
 app.get("/newArrivals", function (req, res) {
   let newArrivals = {
     titel: "New Arrivals",
-    itemImg: "https://i.ibb.co/4p9fHNT/Image-1.png",
-    productTitel: "Dimon necles",
-    price: "$44.00",
-    Jwelery: "Jwelery",
+    myproduct: [
+      {
+        itemImg: "https://i.ibb.co/4p9fHNT/Image-1.png",
+        productTitel: "Dimon necles",
+        price: "$44.00",
+        Jwelery: "Jwelery",
+      },
+      {
+        itemImg: "https://i.ibb.co/sP1MQ1L/31-grande-1.png",
+        productTitel: "Gold necles",
+        price: "$60.00",
+        Jwelery: "Jwelery",
+      },
+      {
+        itemImg: "https://i.ibb.co/tzrq1SJ/product1.png",
+        productTitel: "Selver necles",
+        price: "$20.00",
+        Jwelery: "Jwelery",
+      },
+      {
+        itemImg: "https://i.ibb.co/4p9fHNT/Image-1.png",
+        productTitel: "Valo necles",
+        price: "$5.00",
+        Jwelery: "Jwelery",
+      },
+    ],
   };
   res.json(newArrivals);
 });
