@@ -27,24 +27,26 @@ app.get("/navbar", function (req, res) {
     ],
   };
 
-  res.send(navbar);
+  res.json(navbar);
 });
 
 //   ===============bannar part start=======
 
 app.get("/bannar", function (req, res) {
-  let bannar = [
-    {
-      item: "https://i.ibb.co/b1XVXW7/Banner.png",
-    },
-    {
-      item: "https://i.ibb.co/b1XVXW7/Banner.png",
-    },
-    {
-      item: "https://i.ibb.co/b1XVXW7/Banner.png",
-    },
-  ];
-  res.send(bannar);
+  let bannar = {
+    bannar: [
+      {
+        item: "https://i.ibb.co/b1XVXW7/Banner.png",
+      },
+      {
+        item: "https://i.ibb.co/b1XVXW7/Banner.png",
+      },
+      {
+        item: "https://i.ibb.co/b1XVXW7/Banner.png",
+      },
+    ],
+  };
+  res.json(bannar);
 });
 //   ===============bannar part end=======
 
@@ -55,7 +57,7 @@ app.get("/bannerService", function (req, res) {
     two: "Two years warranty",
     three: "Two years warranty",
   };
-  res.send(bannerService);
+  res.json(bannerService);
 });
 //   ===============BannerService part end=======
 
@@ -66,7 +68,7 @@ app.get("/advertisment", function (req, res) {
     seventyDes: "https://i.ibb.co/7XwqRmF/Ad-2.png",
     fiftyDes: "https://i.ibb.co/rfCS7Gf/Ad-3.png",
   };
-  res.send(advertisment);
+  res.json(advertisment);
 });
 //   ===============Advertisment part end=======
 
@@ -79,7 +81,7 @@ app.get("/newArrivals", function (req, res) {
     price: "$44.00",
     Jwelery: "Jwelery",
   };
-  res.send(newArrivals);
+  res.json(newArrivals);
 });
 //   ===============NewArrivals part end=======
 
@@ -88,7 +90,7 @@ app.get("/middeladd", function (req, res) {
   let middeladd = {
     item: "https://i.ibb.co/G29tpdW/middeladd.png",
   };
-  res.send(middeladd);
+  res.json(middeladd);
 });
 //   ===============Middeladd part end=======
 
