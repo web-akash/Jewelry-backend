@@ -99,6 +99,12 @@ app.get("/newArrivals", function (req, res) {
         price: "$5.00",
         Jwelery: "Jwelery",
       },
+      {
+        itemImg: "https://i.ibb.co/tzrq1SJ/product1.png",
+        productTitel: "Selver necles",
+        price: "$20.00",
+        Jwelery: "Jwelery",
+      },
     ],
   };
   res.json(newArrivals);
