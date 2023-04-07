@@ -109,6 +109,47 @@ app.get("/newArrivals", function (req, res) {
   };
   res.json(newArrivals);
 });
+
+app.get("/ourBestsellers", function (req, res) {
+  let newArrivals = {
+    titel: "Our Bestsellers",
+    myproduct: [
+      {
+        itemImg: "https://i.ibb.co/4p9fHNT/Image-1.png",
+        productTitel: "Dimon necles",
+        price: "$44.00",
+        Jwelery: "Jwelery",
+        batch: flase,
+      },
+      {
+        itemImg: "https://i.ibb.co/sP1MQ1L/31-grande-1.png",
+        productTitel: "Gold necles",
+        price: "$60.00",
+        Jwelery: "Jwelery",
+      },
+      {
+        itemImg: "https://i.ibb.co/tzrq1SJ/product1.png",
+        productTitel: "Selver necles",
+        price: "$20.00",
+        Jwelery: "Jwelery",
+        batch: true,
+      },
+      {
+        itemImg: "https://i.ibb.co/4p9fHNT/Image-1.png",
+        productTitel: "Valo necles",
+        price: "$5.00",
+        Jwelery: "Jwelery",
+      },
+      {
+        itemImg: "https://i.ibb.co/tzrq1SJ/product1.png",
+        productTitel: "Selver necles",
+        price: "$20.00",
+        Jwelery: "Jwelery",
+      },
+    ],
+  };
+  res.json(newArrivals);
+});
 //   ===============NewArrivals part end=======
 
 //   ===============Middeladd part start=======
