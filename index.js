@@ -1,6 +1,8 @@
 const express = require("express");
-
+var cors = require("cors");
 const app = express();
+
+app.use(cors());
 app.get("/navbar", function (req, res) {
   let navbar = {
     logo: "https://i.ibb.co/Nm5y4gM/logo.png",
