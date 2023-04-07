@@ -153,6 +153,22 @@ app.get("/ourBestsellers", function (req, res) {
   };
   res.json(ourBestsellers);
 });
+
+app.get("/productall", function (req, res) {
+  let productall = {
+    titel: "Our Bestsellers",
+    myproduct: [
+      {
+        itemImg: "https://i.ibb.co/4p9fHNT/Image-1.png",
+        productTitel: "Dimon necles",
+        price: "$44.00",
+        Jwelery: "Jwelery",
+        batch: "flase",
+      },
+    ],
+  };
+  res.json(productall);
+});
 //   ===============NewArrivals part end=======
 
 //   ===============Middeladd part start=======
