@@ -30,8 +30,6 @@ app.get("/navbar", function (req, res) {
   res.json(navbar);
 });
 
-//   ===============bannar part start=======
-
 app.get("/bannar", function (req, res) {
   let bannar = {
     bannar: [
@@ -48,9 +46,7 @@ app.get("/bannar", function (req, res) {
   };
   res.json(bannar);
 });
-//   ===============bannar part end=======
 
-//   ===============BannerService part start=======
 app.get("/bannerService", function (req, res) {
   let bannerService = {
     one: "Two years warranty",
@@ -59,9 +55,7 @@ app.get("/bannerService", function (req, res) {
   };
   res.json(bannerService);
 });
-//   ===============BannerService part end=======
 
-//   ===============Advertisment part start=======
 app.get("/advertisment", function (req, res) {
   let advertisment = {
     thertyDes: "https://i.ibb.co/nCf32Kw/Ad-1.png",
@@ -70,9 +64,7 @@ app.get("/advertisment", function (req, res) {
   };
   res.json(advertisment);
 });
-//   ===============Advertisment part end=======
 
-//   ===============NewArrivals part start=======
 app.get("/newArrivals", function (req, res) {
   let newArrivals = {
     titel: "New Arrivals",
@@ -83,15 +75,12 @@ app.get("/newArrivals", function (req, res) {
   };
   res.json(newArrivals);
 });
-//   ===============NewArrivals part end=======
 
-//   ===============Middeladd part start=======
 app.get("/middeladd", function (req, res) {
   let middeladd = {
     item: "https://i.ibb.co/G29tpdW/middeladd.png",
   };
   res.json(middeladd);
 });
-//   ===============Middeladd part end=======
 
 app.listen(3000);
