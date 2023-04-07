@@ -47,40 +47,40 @@ app.get("/bannar", function (req, res) {
   res.json(bannar);
 });
 
-app.get("/bannerService", function (req, res) {
-  let bannerService = {
-    one: "Two years warranty",
-    two: "Two years warranty",
-    three: "Two years warranty",
-  };
-  res.json(bannerService);
-});
+// app.get("/bannerService", function (req, res) {
+//   let bannerService = {
+//     one: "Two years warranty",
+//     two: "Two years warranty",
+//     three: "Two years warranty",
+//   };
+//   res.json(bannerService);
+// });
 
-app.get("/advertisment", function (req, res) {
-  let advertisment = {
-    thertyDes: "https://i.ibb.co/nCf32Kw/Ad-1.png",
-    seventyDes: "https://i.ibb.co/7XwqRmF/Ad-2.png",
-    fiftyDes: "https://i.ibb.co/rfCS7Gf/Ad-3.png",
-  };
-  res.json(advertisment);
-});
+// app.get("/advertisment", function (req, res) {
+//   let advertisment = {
+//     thertyDes: "https://i.ibb.co/nCf32Kw/Ad-1.png",
+//     seventyDes: "https://i.ibb.co/7XwqRmF/Ad-2.png",
+//     fiftyDes: "https://i.ibb.co/rfCS7Gf/Ad-3.png",
+//   };
+//   res.json(advertisment);
+// });
 
-app.get("/newArrivals", function (req, res) {
-  let newArrivals = {
-    titel: "New Arrivals",
-    itemImg: "https://i.ibb.co/4p9fHNT/Image-1.png",
-    productTitel: "Dimon necles",
-    price: "$44.00",
-    Jwelery: "Jwelery",
-  };
-  res.json(newArrivals);
-});
+// app.get("/newArrivals", function (req, res) {
+//   let newArrivals = {
+//     titel: "New Arrivals",
+//     itemImg: "https://i.ibb.co/4p9fHNT/Image-1.png",
+//     productTitel: "Dimon necles",
+//     price: "$44.00",
+//     Jwelery: "Jwelery",
+//   };
+//   res.json(newArrivals);
+// });
 
-app.get("/middeladd", function (req, res) {
-  let middeladd = {
-    item: "https://i.ibb.co/G29tpdW/middeladd.png",
-  };
-  res.json(middeladd);
-});
+// app.get("/middeladd", function (req, res) {
+//   let middeladd = {
+//     item: "https://i.ibb.co/G29tpdW/middeladd.png",
+//   };
+//   res.json(middeladd);
+// });
 
 app.listen(3000);
