@@ -126,6 +126,7 @@ app.get("/ourBestsellers", function (req, res) {
         productTitel: "Gold necles",
         price: "$60.00",
         Jwelery: "Jwelery",
+        batch: flase,
       },
       {
         itemImg: "https://i.ibb.co/tzrq1SJ/product1.png",
@@ -139,12 +140,14 @@ app.get("/ourBestsellers", function (req, res) {
         productTitel: "Valo necles",
         price: "$5.00",
         Jwelery: "Jwelery",
+        batch: flase,
       },
       {
         itemImg: "https://i.ibb.co/tzrq1SJ/product1.png",
         productTitel: "Selver necles",
         price: "$20.00",
         Jwelery: "Jwelery",
+        batch: flase,
       },
     ],
   };
