@@ -4,6 +4,7 @@ var cors = require("cors");
 const app = express();
 
 app.use(cors());
+
 app.get("/navbar", function (req, res) {
   let navbar = {
     logo: "https://i.ibb.co/Nm5y4gM/logo.png",
@@ -91,6 +92,4 @@ app.get("/middeladd", function (req, res) {
 });
 //   ===============Middeladd part end=======
 
-app.listen(8000, () => {
-  console.log("port runnnig");
-});
+app.listen(3000);
